@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Podcast sur les Génocides</title>
+    <style>
+        body {
+            font-family: Mongolian Baiti, sans-serif
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+        header {
+            background-color: #f4edc4;
+            color: rgb(10, 81, 42);;
+            text-align: center;
+            padding: 30px 0;
+            font-size: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .language-selector {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .language-selector button {
+            background-color: #34495e;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 0 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .language-selector button:hover {
+            background-color: #1abc9c;
+        }
+        .language-selector button:focus {
+            outline: none;
+        }
+        h2 {
+            color: #2c3e50;
+        }
+        audio {
+            width: 100%;
+            margin-top: 20px;
+        }
+        .content-section {
+            display: none;
+        }
+        .content-section.active {
+            display: block;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #2c3e50;
+            color: white;
+            margin-top: 40px;
+}
+.logo {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.logo img {
+    width: 40px;
+    height: auto;
+}
+.podcast {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .podcast audio {
+            width: 100%;
+}
+       
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Podcast sur le droit dans les Génocides</h1>
+    <img src="ONU_Logo.jpg" width= 500x height=500Px >
+        <img src="logo.droits.jpg    " width= 500Px height=500Px >
+
+</header>
+
+
+
+
+
+
+<div class="container">
+    <!-- Selector de idioma -->
+    <div class="language-selector">
+        <button onclick="changeLanguage('fr')">Français</button>
+        <button onclick="changeLanguage('es')">Español</button>
+        <button onclick="changeLanguage('en')">English</button>
+        <button onclick="changeLanguage('de')">Deutsch</button>
+        <button onclick="changeLanguage('ru')">Русский</button>
+        <button onclick="changeLanguage('zh')">中文</button>
+        <button onclick="changeLanguage('hy')">Հայերեն</button>
+    </div>
+        
+    <div class="logo">
+        <img src="ONU_Logo.jpg" width= 50x height= 50Px >
+        <img src="logo.ma.jpg" width= 50x height=50Px >
+        <img src="flag.ar.jpg" width= 50    x height=50Px >
+    </div>
+
+    <!-- Contenido -->
+    <div id="content">
+        <!-- Français -->
+        <div id="fr" class="content-section active">
+            <h2>Introduction</h2>
+            <p>Le génocide arménien (1915-1923), orchestré par l'Empire ottoman, a conduit à la mort de 1,5 million d'Arméniens. L'Holocauste (1941-1945), perpétré par le régime nazi, a tué six millions de Juifs. Ces deux génocides sont des exemples tragiques de persécution ethnique et religieuse ayant laissé des cicatrices profondes dans l'histoire mondiale.</p>
+
+            <h2>Description</h2>
+            <p>Dans ce podcast vous pourrez écouter l'histoire du génocide arménien et du génocide juif. Il y est aussi abordé le sujet du droit dans ces génocides, avec le procès de Nuremberg, le procès de Klaus Barbie. Et enfin, vous pourrez terminer l écoute avec le témoignage d une rescapée du génocide arménien, avec l'absence de reconnaissance et de procès.</p>
+
+            <h2>Podcast</h2>
+            <p>Écoutez notre podcast sur le droit dans les génocides :</p>
+            <audio controls>
+                <source src="Projet_genocide_Maira_Alain_Sophie_.mp3" type="audio/mp3">
+                Votre navigateur ne supporte pas l élément audio.
+            </audio>
+        </div>
+
+        <!-- Español -->
+        <div id="es" class="content-section">
+            <h2>Introducción</h2>
+            <p>El genocidio armenio (1915-1923), orquestado por el Imperio otomano, condujo a la muerte de 1,5 millones de armenios. El Holocausto (1941-1945), perpetrado por el régimen nazi, mató a seis millones de judíos. Estos dos genocidios son ejemplos trágicos de persecución étnica y religiosa que dejaron cicatrices profundas en la historia mundial.</p>
+
+            <h2>Descripción</h2>
+            <p>En este podcast podrás escuchar la historia del genocidio armenio y el genocidio judío. También se aborda el tema del derecho en estos genocidios, con el juicio de Nuremberg, el juicio de Klaus Barbie. Finalmente, podrás terminar la escucha con el testimonio de una sobreviviente del genocidio armenio, con la ausencia de reconocimiento y juicio.</p>
+
+            <h2>Podcast</h2>
+            <p>Escucha nuestro podcast sobre el derecho en los genocidios:</p>
+            <audio controls>
+                <source src="Projet_genocide_Maira_Alain_Sophie_.mp3" type="audio/mp3">
+                Tu navegador no soporta el elemento de audio.
+            </audio>
+        </div>
+
+        <!-- English -->
+        <div id="en" class="content-section">
+            <h2>Introduction</h2>
+            <p>The Armenian genocide (1915-1923), orchestrated by the Ottoman Empire, led to the death of 1.5 million Armenians. The Holocaust (1941-1945), perpetrated by the Nazi regime, killed six million Jews. These two genocides are tragic examples of ethnic and religious persecution that left deep scars in world history.</p>
+
+            <h2>Description</h2>
+            <p>In this podcast, you will hear about the history of the Armenian genocide and the Jewish genocide. The topic of law in these genocides is also discussed, including the Nuremberg Trials and the Klaus Barbie trial. Finally, you will end the listening with a testimony from a survivor of the Armenian genocide, with the absence of recognition and trial.</p>
+
+            <h2>Podcast</h2>
+            <p>Listen to our podcast on the law in genocides:</p>
+            <audio controls>
+                <source src="Projet_genocide_Maira_Alain_Sophie_.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+
+        <!-- Deutsch -->
+        <div id="de" class="content-section">
+            <h2>Einführung</h2>
+            <p>Der armenische Genozid (1915-1923), orchestriert vom Osmanischen Reich, führte zum Tod von 1,5 Millionen Armeniern. Der Holocaust (1941-1945), verübt vom Nazi-Regime, tötete sechs Millionen Juden. Diese beiden Genozide sind tragische Beispiele für ethnische und religiöse Verfolgung, die tiefe Narben in der Weltgeschichte hinterließen.</p>
+
+            <h2>Beschreibung</h2>
+            <p>In diesem Podcast erfahren Sie die Geschichte des armenischen und des jüdischen Genozids. Es wird auch das Thema Recht in diesen Genoziden behandelt, einschließlich der Nürnberger Prozesse und des Prozesses gegen Klaus Barbie. Schließlich hören Sie das Zeugnis einer Überlebenden des armenischen Genozids über die fehlende Anerkennung und die Prozesse.</p>
+
+            <h2>Podcast</h2>
+            <p>Hören Sie unseren Podcast über das Recht in den Genoziden:</p>
+            <audio controls>
+                <source src="Projet_genocide_Maira_Alain_Sophie_.mp3" type="audio/mp3">
+                Ihr Browser unterstützt das Audioelement nicht.
+            </audio>
+        </div>
+
+        <!-- Русский -->
+        <div id="ru" class="content-section">
+            <h2>Введение</h2>
+            <p>Армянский геноцид (1915-1923), организованный Османской империей, привел к смерти 1,5 миллиона армян. Холокост (1941-1945), совершенный нацистским режимом, убил шесть миллионов евреев. Эти два геноцида являются трагическими примерами этнических и религиозных преследований, оставивших глубокие следы в мировой истории.</p>
+
+            <h2>Описание</h2>
+            <p>В этом подкасте вы услышите историю армянского и еврейского геноцида. Также обсуждается вопрос права в этих геноцидах, включая Нюрнбергский процесс и процесс над Клаусом Барби. В конце вы услышите свидетельство выжившей армянского геноцида о нехватке признания и судебных процессов.</p>
+
+            <h2>Подкаст</h2>
+            <p>Послушайте наш подкаст о праве в геноцидах:</p>
+            <audio controls>
+                <source src="Projet_genocide_Maira_Alain_Sophie_.mp3" type="audio/mp3">
+                Ваш браузер не поддерживает элемент audio.
+            </audio>
+        </div>
+
+        <!-- 中文 -->
+        <div id="zh" class="content-section">
+            <h2>介绍</h2>
+            <p>亚美尼亚大屠杀（1915-1923），由奥斯曼帝国策划，导致150万亚美尼亚人死亡。大屠杀（1941-1945），由纳粹政权实施，导致六百万犹太人丧生。这两场大屠杀是种族和宗教迫害的悲惨例子，深深地刻在了世界历史的伤痕上。</p>
+
+            <h2>描述</h2>
+            <p>在这个播客中，您将听到关于亚美尼亚大屠杀和犹太人大屠杀的历史。还将讨论在这些大屠杀中的法律问题，包括纽伦堡审判和克劳斯·巴比审判。最后，您将结束听取一位亚美尼亚大屠杀幸存者的证词，讲述没有认同和审判的经历。</p>
+
+            <h2>播客</h2>
+            <p>收听我们的关于大屠杀中的法律问题的播客：</p>
+            <audio controls>
+                <source src="Projet_genocide_Maira_Alain_Sophie_.mp3" type="audio/mp3">
+                您的浏览器不支持音频元素。
+            </audio>
+        </div>
+
+        <!-- Հայերեն -->
+        <div id="hy" class="content-section">
+            <h2>Ներածություն</h2>
+            <p>Արմենյան ցեղասպանությունը (1915-1923), որը կազմակերպվել է Օսմանյան կայսրության կողմից, հանգեցրեց 1,5 միլիոն հայերի մահվանը։ Հոլոքոստը (1941-1945), որը կատարվել է նացիստական ռեժիմի կողմից, սպանեց վեց միլիոն հրեաներ։ Այս երկու ցեղասպանությունները մարդկության պատմության մեջ էթնիկ և կրոնական հալածանքի ողբերգական օրինակներ են, որոնք խոր հետքեր են թողել համաշխարհային պատմության մեջ։</p>
+
+            <h2>Նկարագրություն</h2>
+            <p>Այս պոդկաստում կլսեք Արմենյան ցեղասպանության և հրեաների ցեղասպանության պատմությունը։ Թեմա է դրված նաև ցեղասպանություններում իրավունքի դերը՝ Նյուրնբերգի դատավարությունը, Կլաուս Բարբիի դատավարությունը։ Վերջում կլսեք մի կենդանի վկաների վկայություն՝ Արմենյան ցեղասպանության վերապրածներից, որի մասին պատմվում է ճանաչման և դատավարության բացակայության մասին։</p>
+
+            <h2>Պոդկաստ</h2>
+            <p>Լսեք theեղասպանության մասին օրենքի վերաբերյալ մեր պոդասկադը.</p>
+            <audio controls>
+                <source src="Projet_genocide_Maira_Alain_Sophie_.mp3" type="audio/mp3">
+                Ваш браузер не поддерживает элемент audio.
+            </audio>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <p>&copy; 2024 Maïra Aguilar Bré, Alain Revret, Sophie Castores Pardo. Tous droits réservés.</p>
+</div>
+
+<script>
+    function changeLanguage(lang) {
+        const sections = document.querySelectorAll('.content-section');
+        sections.forEach(section => section.classList.remove('active'));
+        
+        const selectedSection = document.getElementById(lang);
+        if (selectedSection) {
+            selectedSection.classList.add('active');
+        }
+    }
+</script>
+
+</body>
+</html>
